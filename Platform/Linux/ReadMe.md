@@ -1,4 +1,4 @@
-# Linux Kernel for MinCLR Project
+# Linux Platform for MinCLR Project
 
 This is the repository contains the customized Linux Kernel for MinCLR Project.
 MinCLR is a minimal bootable environment for Common Language Runtime. 
