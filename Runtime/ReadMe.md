@@ -16,6 +16,10 @@ Debian packages for running a standard .NET Runtime.
       - libc.so.6
       - libdl.so.2
       - libm.so.6
+      - libnss_compat.so.2
+      - libnss_dns.so.2
+      - libnss_files.so.2
+      - libnss_hesiod.so.2
       - libpthread.so.0
       - libresolv.so.2
       - librt.so.1
