@@ -1,7 +1,7 @@
 /*
- * PROJECT:   MinClr (.NET/Linux)
+ * PROJECT:   MinCLR
  * FILE:      main.c
- * PURPOSE:   Implementation for clrinit
+ * PURPOSE:   Implementation for MinCLR Initialization Bootstrapper
  *
  * LICENSE:   The MIT License
  *
@@ -19,6 +19,11 @@
 
 #include <stdio.h>
 
+void print_message(const char *message)
+{
+    printf("[MinCLR.Initialization.Bootstrapper] %s\n", message);
+}
+
 int main()
 {
     if (-1 == mknod(
@@ -26,7 +31,7 @@ int main()
         S_IFCHR | S_IRUSR | S_IWUSR, 
         MKDEV(TTYAUX_MAJOR, 1)))
     {
-        printf("clrinit: Failed to mknod /dev/console.\n");
+        print_message("Failed to mknod /dev/console.\n");
     }
 
     int fd;
@@ -46,7 +51,7 @@ int main()
         MS_NOSUID | MS_NOEXEC | MS_RELATIME,
         "size=10240k,mode=755") && errno != EBUSY)
     {
-        printf("clrinit: Failed to mount /dev.\n");
+        print_message("Failed to mount /dev.\n");
     }
 
     if (-1 == mount(
@@ -56,7 +61,7 @@ int main()
         MS_NOSUID | MS_NOEXEC | MS_RELATIME | MS_NODEV,
         NULL) && errno != EBUSY)
     {
-        printf("clrinit: Failed to mount /proc.\n");
+        print_message("Failed to mount /proc.\n");
     }
 
     if (-1 == mount(
@@ -66,7 +71,7 @@ int main()
         MS_NOSUID | MS_NOEXEC | MS_RELATIME | MS_NODEV,
         NULL) && errno != EBUSY)
     {
-        printf("clrinit: Failed to mount /sys.\n");
+        print_message("Failed to mount /sys.\n");
     }
 
     if (-1 == mount(
@@ -76,7 +81,7 @@ int main()
         0,
         NULL))
     {
-        printf("clrinit: Failed to mount /tmp to tmpfs.\n");
+        print_message("Failed to mount /tmp to tmpfs.\n");
     }
 
     chdir("/root");
@@ -98,7 +103,7 @@ int main()
 
     execve(argv[0], (char* const*)argv, (char* const*)envp);
 
-    printf("clrinit: Failed to start PowerShell.\n");
+    print_message("Failed to start PowerShell.\n");
 
     return 0;
 }
