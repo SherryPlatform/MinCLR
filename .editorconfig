@@ -33,3 +33,8 @@ trim_trailing_whitespace = true
 [*.bat]
 charset = utf-8
 insert_final_newline = true
+
+[*.sh]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
