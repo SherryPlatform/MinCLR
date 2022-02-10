@@ -2,11 +2,9 @@
 
 This is the repository contains the customized Linux Platform for MinCLR Project.
 
-## Available Linux Kernel Configurations
+## Available Generic Linux Kernel Configurations
 
-- Generic Linux Kernel for VMware virtualization environment
-  - [5.10.y, x64](5.10/config-vmware-x64)
-  - [5.15.y, x64](5.15/config-vmware-x64)
+- [VMware virtualization environment, x64](kernel-config-vmware-x64)
 
 ## Userspace Native Dependencies
 
