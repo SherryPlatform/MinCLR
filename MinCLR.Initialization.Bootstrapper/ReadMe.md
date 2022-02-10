@@ -1,5 +1,5 @@
 # MinCLR.Initialization.Bootstrapper
 
-Bootstrap for MinCLR.Initialization.
+Bootstrapper for MinCLR.Initialization.
 
 Use `build.sh` to build it.
