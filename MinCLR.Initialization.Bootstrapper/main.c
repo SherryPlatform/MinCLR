@@ -26,22 +26,17 @@ void print_message(const char *message)
 
 int main()
 {
-    if (-1 == mknod(
-        "/dev/console",
-        S_IFCHR | S_IRUSR | S_IWUSR, 
-        MKDEV(TTYAUX_MAJOR, 1)))
-    {
-        print_message("Failed to mknod /dev/console.\n");
-    }
-
     int fd;
-    if ((fd = open("/dev/console", O_RDWR)) != -1) {
+    if ((fd = open("/dev/console", O_RDWR)) != -1) 
+    {
 		dup2(fd, STDIN_FILENO);
 		dup2(fd, STDOUT_FILENO);
 		dup2(fd, STDERR_FILENO);
 
 		if (fd > STDERR_FILENO)
-			close(fd);
+		{
+            close(fd);
+        }
 	}
 
     if (-1 == mount(
