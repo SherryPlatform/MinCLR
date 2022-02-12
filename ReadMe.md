@@ -6,4 +6,5 @@
   - [Linux](Platform/Linux)
   - [NuttX](Platform/NuttX)
   - [MinRT](Platform/MinRT)
+- [Infrastructure](MinCLR)
 - [MinCLR.Initialization.Bootstrapper](MinCLR.Initialization.Bootstrapper)
