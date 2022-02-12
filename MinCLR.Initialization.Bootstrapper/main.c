@@ -26,18 +26,20 @@ void print_message(const char *message)
 
 int main()
 {
-    int fd;
-    if ((fd = open("/dev/console", O_RDWR)) != -1) 
     {
-		dup2(fd, STDIN_FILENO);
-		dup2(fd, STDOUT_FILENO);
-		dup2(fd, STDERR_FILENO);
+        int confd = open("/dev/console", O_RDWR);
+        if (-1 != confd)
+        {
+            dup2(confd, STDIN_FILENO);
+            dup2(confd, STDOUT_FILENO);
+            dup2(confd, STDERR_FILENO);
 
-		if (fd > STDERR_FILENO)
-		{
-            close(fd);
+            if (confd > STDERR_FILENO)
+            {
+                close(confd);
+            }
         }
-	}
+    }
 
     if (-1 == mount(
         "udev",
