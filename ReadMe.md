@@ -3,5 +3,5 @@
 ## Components
 
 - [Platform](Platform)
-- [Infrastructure](MinCLR)
-- [MinCLR.Initialization.Bootstrapper](MinCLR.Initialization.Bootstrapper)
+- [MinInit](MinInit)
+- [MinCLR](MinCLR)

@@ -1,7 +1,7 @@
 /*
- * PROJECT:   MinCLR
+ * PROJECT:   MinInit
  * FILE:      main.c
- * PURPOSE:   Implementation for MinCLR Initialization Bootstrapper
+ * PURPOSE:   Implementation for MinInit
  *
  * LICENSE:   The MIT License
  *
@@ -21,7 +21,7 @@
 
 void print_message(const char *message)
 {
-    printf("[MinCLR.Initialization.Bootstrapper] %s\n", message);
+    printf("[MinInit] %s\n", message);
 }
 
 int main()
