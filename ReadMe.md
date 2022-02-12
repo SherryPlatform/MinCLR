@@ -2,9 +2,6 @@
 
 ## Components
 
-- Platform
-  - [Linux](Platform/Linux)
-  - [NuttX](Platform/NuttX)
-  - [MinRT](Platform/MinRT)
+- [Platform](Platform)
 - [Infrastructure](MinCLR)
 - [MinCLR.Initialization.Bootstrapper](MinCLR.Initialization.Bootstrapper)
