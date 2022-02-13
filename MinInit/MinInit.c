@@ -1,6 +1,6 @@
 /*
  * PROJECT:   MinInit
- * FILE:      main.c
+ * FILE:      MinInit.c
  * PURPOSE:   Implementation for MinInit
  *
  * LICENSE:   The MIT License
