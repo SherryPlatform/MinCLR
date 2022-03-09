@@ -13,8 +13,6 @@
 #include <sys/mount.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <linux/major.h>
-#include <linux/kdev_t.h>
 #include <unistd.h>
 
 #include <stdio.h>

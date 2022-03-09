@@ -12,4 +12,4 @@
 SOURCE_ROOT=$(dirname $(realpath -s ${BASH_SOURCE[0]}))
 OUTPUT_ROOT=$SOURCE_ROOT/Output/Binaries
 mkdir -p $OUTPUT_ROOT
-gcc -O2 -s -o $OUTPUT_ROOT/mininit $SOURCE_ROOT/MinInit.c
+musl-gcc -std=c99 -static -O2 -s -o $OUTPUT_ROOT/mininit $SOURCE_ROOT/MinInit.c
