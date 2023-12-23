@@ -2,9 +2,18 @@
 
 This is the repository contains the Linux Platform for MinCLR Project.
 
-## Available Generic Linux Kernel Configurations
+## Optimized Linux Kernel
 
-- [VMware virtualization environment, x64](kernel-config-vmware-x64)
+Source code available at https://github.com/SherryPlatform/MinLin.Kernel.
+
+Here are available configurations for the optimized Linux Kernel.
+
+#### Hyper-V Generation 2 Virtual Machines
+
+You can choose these configurations for Azure, Hyper-V and NanaBox.
+
+- [x64, generic, as modularized as possible](https://github.com/SherryPlatform/MinLin.Kernel/blob/main/MinLin/config-MinLin.Kernel.NanaBox)
+- [x64, generic, make all modules builtin](https://github.com/SherryPlatform/MinLin.Kernel/blob/main/MinLin/config-MinLin.Kernel.NanaBox.Single)
 
 ## Userspace Native Dependencies
 
