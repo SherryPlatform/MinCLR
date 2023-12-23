@@ -21,6 +21,15 @@ virtualization platform for MinLin and MinCLR.
 - [x64, generic, as modularized as possible](https://github.com/SherryPlatform/MinLin.Kernel/blob/main/MinLin/config-MinLin.Kernel.NanaBox)
 - [x64, generic, make all modules builtin](https://github.com/SherryPlatform/MinLin.Kernel/blob/main/MinLin/config-MinLin.Kernel.NanaBox.Single)
 
+For Hyper-V Generation 2 Virtual Machines, systemd-boot is suggested for the 
+bootloader because Hyper-V Generation 2 Virtual Machines only support UEFI
+Class 3. So, it's really suitable.
+
+Here are the original links for systemd-boot package. For use systemd-boot as
+bootloader, `/usr/lib/systemd/boot/efi/systemd-bootx64.efi` is the only need.
+
+https://mirrors.tuna.tsinghua.edu.cn//debian/pool/main/s/systemd/systemd-boot-efi_252.19-1~deb12u1_amd64.deb
+
 ## Minimum Native Infrastructure
 
 Based on the reference in [dotnet-docker] and [PowerShell-Docker] project, we
