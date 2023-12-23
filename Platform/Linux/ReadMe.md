@@ -1,4 +1,4 @@
-﻿# Linux Platform for MinCLR Project
+﻿# Linux Platform for MinCLR Project (.NET/Linux)
 
 This is the repository contains the Linux Platform for MinCLR Project.
 
@@ -8,9 +8,15 @@ Source code available at https://github.com/SherryPlatform/MinLin.Kernel.
 
 Here are available configurations for the optimized Linux Kernel.
 
-#### Hyper-V Generation 2 Virtual Machines
+### Hyper-V Generation 2 Virtual Machines
 
 You can choose these configurations for Azure, Hyper-V and NanaBox.
+
+Note: NanaBox is a third-party lightweight XAML-based out-of-box-experience 
+oriented Hyper-V virtualization software based on Host Compute System API, 
+Remote Desktop ActiveX control and XAML Islands, project repository available
+at https://github.com/M2Team/NanaBox. NanaBox is the reference and prototype
+virtualization platform for MinLin and MinCLR.
 
 - [x64, generic, as modularized as possible](https://github.com/SherryPlatform/MinLin.Kernel/blob/main/MinLin/config-MinLin.Kernel.NanaBox)
 - [x64, generic, make all modules builtin](https://github.com/SherryPlatform/MinLin.Kernel/blob/main/MinLin/config-MinLin.Kernel.NanaBox.Single)
