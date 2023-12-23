@@ -1,4 +1,6 @@
-# MinCLR - Minimal bootable environment for Common Language Runtime
+﻿# MinCLR
+
+Minimal bootable Linux distro for .NET environment.
 
 ## Components
 
