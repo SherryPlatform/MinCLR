@@ -1,6 +1,6 @@
-# Linux Platform for MinCLR Project
+﻿# Linux Platform for MinCLR Project
 
-This is the repository contains the customized Linux Platform for MinCLR Project.
+This is the repository contains the Linux Platform for MinCLR Project.
 
 ## Available Generic Linux Kernel Configurations
 

@@ -1,4 +1,4 @@
 ﻿# MinCLR Platform
 
-- [Linux](Platform/Linux)
+- [Linux](Linux/ReadMe.md)
 - [RaySoul](RaySoul/ReadMe.md)
