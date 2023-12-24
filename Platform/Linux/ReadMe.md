@@ -21,6 +21,9 @@ virtualization platform for MinLin and MinCLR.
 - [x64, generic, as modularized as possible](https://github.com/SherryPlatform/MinLin.Kernel/blob/main/MinLin/config-MinLin.Kernel.NanaBox)
 - [x64, generic, make all modules builtin](https://github.com/SherryPlatform/MinLin.Kernel/blob/main/MinLin/config-MinLin.Kernel.NanaBox.Single)
 
+Note: All modules builtin is highly recommended unless .NET based kernel module
+on-demand loading implementation is available.
+
 For Hyper-V Generation 2 Virtual Machines, systemd-boot is suggested for the 
 bootloader because Hyper-V Generation 2 Virtual Machines only support UEFI
 Class 3. So, it's really suitable.
@@ -29,6 +32,40 @@ Here are the original links for systemd-boot package. For use systemd-boot as
 bootloader, `/usr/lib/systemd/boot/efi/systemd-bootx64.efi` is the only need.
 
 https://mirrors.tuna.tsinghua.edu.cn//debian/pool/main/s/systemd/systemd-boot-efi_252.19-1~deb12u1_amd64.deb
+
+Here is the NanaBox virtual machine configuration file sample.
+
+More information available at https://github.com/M2Team/NanaBox/blob/main/Documents/ConfigurationReference.md
+
+```
+{
+  "NanaBox": {
+    "ComPorts": {
+      "UefiConsole": "Disabled"
+    },
+    "Gpu": {
+      "AssignmentMode": "Disabled"
+    },
+    "GuestType": "Windows",
+    "MemorySize": 192,
+    "Name": "MouriVM-MinCLR",
+    "NetworkAdapters": [
+      {
+        "Connected": true,
+      }
+    ],
+    "ProcessorCount": 1,
+    "ScsiDevices": [
+      {
+        "Path": ".\\MouriVM-MinCLR.vhdx",
+        "Type": "VirtualDisk"
+      }
+    ],
+    "Type": "VirtualMachine",
+    "Version": 1
+  }
+}
+```
 
 ## Minimum Native Infrastructure
 
