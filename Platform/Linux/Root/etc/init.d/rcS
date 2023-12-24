@@ -1,0 +1,11 @@
+#!/bin/sh
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -o remount,rw /
+
+dhcpcd eth0
+
+cd /opt/MinCLR.SimpleWebServer/
+HOME="/root" /opt/dotnet/dotnet MinCLR.SimpleWebServer.dll &
+cd /

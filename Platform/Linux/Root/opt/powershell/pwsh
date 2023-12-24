@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /opt/dotnet/dotnet /opt/powershell/pwsh.dll $*

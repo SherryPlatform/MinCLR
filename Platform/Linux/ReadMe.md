@@ -65,3 +65,7 @@ folder for get the backup packages.
   - https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.19/main/x86_64/htop-3.2.2-r1.apk
   - https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.19/main/x86_64/dhcpcd-10.0.5-r0.apk
   - https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.19/main/x86_64/nano-7.2-r1.apk
+
+## Additional files for root file system
+
+You also can browse [Root](Root) folder for get these files.
