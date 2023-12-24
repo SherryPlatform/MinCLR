@@ -29,7 +29,7 @@ bootloader because Hyper-V Generation 2 Virtual Machines only support UEFI
 Class 3. So, it's really suitable.
 
 Here are the original links for systemd-boot package. For use systemd-boot as
-bootloader, `/usr/lib/systemd/boot/efi/systemd-bootx64.efi` is the only need.
+bootloader, `/usr/lib/systemd/boot/efi/systemd-bootx64.efi` is all you need.
 
 https://mirrors.tuna.tsinghua.edu.cn//debian/pool/main/s/systemd/systemd-boot-efi_252.19-1~deb12u1_amd64.deb
 
@@ -48,16 +48,16 @@ More information available at https://github.com/M2Team/NanaBox/blob/main/Docume
     },
     "GuestType": "Windows",
     "MemorySize": 192,
-    "Name": "MouriVM-MinCLR",
+    "Name": "MinCLR",
     "NetworkAdapters": [
       {
-        "Connected": true,
+        "Connected": true
       }
     ],
     "ProcessorCount": 1,
     "ScsiDevices": [
       {
-        "Path": ".\\MouriVM-MinCLR.vhdx",
+        "Path": ".\\MinCLR.vhdx",
         "Type": "VirtualDisk"
       }
     ],
